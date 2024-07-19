@@ -1,0 +1,139 @@
+<!-- FORM: HEAD SECTION -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- THIS SCRIPT NEEDS TO BE LOADED FIRST BEFORE wforms.js -->
+    <script type="text/javascript" data-for="FA__DOMContentLoadedEventDispatch" src="https://cleanslatez.tfaforms.net/js/FA__DOMContentLoadedEventDispatcher.js" defer></script>
+            <script type="text/javascript">
+        document.addEventListener("FA__DOMContentLoaded", function(){
+            const FORM_TIME_START = Math.floor((new Date).getTime()/1000);
+            let formElement = document.getElementById("tfa_0");
+            if (null === formElement) {
+                formElement = document.getElementById("0");
+            }
+            let appendJsTimerElement = function(){
+                let formTimeDiff = Math.floor((new Date).getTime()/1000) - FORM_TIME_START;
+                let cumulatedTimeElement = document.getElementById("tfa_dbCumulatedTime");
+                if (null !== cumulatedTimeElement) {
+                    let cumulatedTime = parseInt(cumulatedTimeElement.value);
+                    if (null !== cumulatedTime && cumulatedTime > 0) {
+                        formTimeDiff += cumulatedTime;
+                    }
+                }
+                let jsTimeInput = document.createElement("input");
+                jsTimeInput.setAttribute("type", "hidden");
+                jsTimeInput.setAttribute("value", formTimeDiff.toString());
+                jsTimeInput.setAttribute("name", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("id", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("autocomplete", "off");
+                if (null !== formElement) {
+                    formElement.appendChild(jsTimeInput);
+                }
+            };
+            if (null !== formElement) {
+                if(formElement.addEventListener){
+                    formElement.addEventListener('submit', appendJsTimerElement, false);
+                } else if(formElement.attachEvent){
+                    formElement.attachEvent('onsubmit', appendJsTimerElement);
+                }
+            }
+        });
+    </script>
+
+    <link href="https://cleanslatez.tfaforms.net/dist/form-builder/5.0.0/wforms-layout.css?v=8cd3e1befd6f9e805edfedd58a24a4ecd646f979" rel="stylesheet" type="text/css" />
+
+    <link href="https://cleanslatez.tfaforms.net/uploads/themes/theme-22.css" rel="stylesheet" type="text/css" />
+    <link href="https://cleanslatez.tfaforms.net/dist/form-builder/5.0.0/wforms-jsonly.css?v=8cd3e1befd6f9e805edfedd58a24a4ecd646f979" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
+    <script type="text/javascript" src="https://cleanslatez.tfaforms.net/wForms/3.11/js/wforms.js?v=8cd3e1befd6f9e805edfedd58a24a4ecd646f979"></script>
+    <script type="text/javascript">
+        wFORMS.behaviors.prefill.skip = false;
+    </script>
+        <script type="text/javascript" src="https://cleanslatez.tfaforms.net/wForms/3.11/js/localization-en_US.js?v=8cd3e1befd6f9e805edfedd58a24a4ecd646f979"></script>
+    <script type="text/javascript">
+        if(wFORMS.behaviors.autosuggest) {
+            wFORMS.behaviors.autosuggest.isPrefetchDisabled = true;
+            wFORMS.behaviors.autosuggest.isRequestOptimizationEnabled = true;
+        }
+    </script>
+    <script>
+        var FAoldJQ;
+        if (typeof $ != 'undefined' && $.noConflict) FAoldJQ = $.noConflict(true);
+    </script>
+    <script src="https://cleanslatez.tfaforms.net/dist/jquery/jquery.js"></script>
+    <script src="https://cleanslatez.tfaforms.net/js/typeahead/v1.2.0/typeahead.bundle.js"></script>
+    <script>
+        var FA$ = $.noConflict(true);
+        if (FAoldJQ) $ = FAoldJQ;
+    </script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<!-- FORM: BODY SECTION -->
+<div class="wFormContainer" style="max-width: 90%; width:auto;">
+    <div class="wFormHeader"></div>
+<div class=""><div class="wForm" id="3-WRPR" data-language="en_US" dir="ltr">
+<div class="codesection" id="code-3"></div>
+<form method="post" action="https://cleanslatez.tfaforms.net/api_v2/workflow/processor" class="hintsBelow labelsAbove" id="3" role="form">
+<div class="htmlSection" id="tfa_10"><div class="htmlContent" id="tfa_10-HTML"><p><font size="5">Clean SlateZ offers financial assistance paying for medical debt for individuals that meet our established economic conditions. Before starting the application, let’s see if you meet the eligibility requirements.</font></p></div></div>
+<div class="htmlSection" id="tfa_11"><div class="htmlContent" id="tfa_11-HTML"><p><font size="5">Please enter the information of the person who <span style="font-size: 14.4px;"><b>owes</b></span><b>&nbsp;the medical debt below</b></font></p></div></div>
+<div id="tfa_4" class="section inline group">
+<div class="oneField field-container-D    " id="tfa_1-D">
+<label id="tfa_1-L" class="label preField reqMark" for="tfa_1">First Name</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_1" name="tfa_1" value="" title="First Name" class="required"></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_3-D">
+<label id="tfa_3-L" class="label preField reqMark" for="tfa_3">Last Name</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_3" name="tfa_3" value="" title="Last Name" class="required"></div>
+</div>
+</div>
+<div id="tfa_9" class="section inline group">
+<div class="oneField field-container-D    " id="tfa_2-D">
+<label id="tfa_2-L" class="label preField reqMark" for="tfa_2">Email</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_2" name="tfa_2" value="" title="Email" class="validate-email required"></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_5-D">
+<label id="tfa_5-L" class="label preField reqMark" for="tfa_5">State of Residence</label><br><div class="inputWrapper">
+<input aria-required="true" type="text" id="tfa_5" name="tfa_5" value="" title="State of Residence" data-dataset-allow-free-responses="0" data-dataset-clear-cache="" autocomplete="off" data-dataset-timestamp="1705173886" data-dataset-id="2fc6bc97-eb79-48a3-b9af-f85345d4cbf4" data-dataset-map="" data-dataset-type="csv" data-dataset-url="https://typeahead.formassembly.com" data-dataset-action="query.php" class="required wfAutosuggest"><i class="fa fa-spinner fa-pulse fa-fw tt-spinner"></i><i class="fa fa-search tt-search" aria-hidden="true"></i><i class="fa fa-times-circle tt-clear no-input" tabindex="0" aria-label="Clear field"></i>
+</div>
+</div>
+</div>
+<div class="oneField field-container-D    " id="tfa_17-D">
+<label id="tfa_17-L" class="label preField reqMark" for="tfa_17">Household Size</label><br><div class="inputWrapper"><select aria-required="true" id="tfa_17" name="tfa_17" title="Household Size" class="calc-Household required"><option value="">Please select...</option>
+<option value="tfa_18" id="tfa_18" class="calcval-30,120">1</option>
+<option value="tfa_19" id="tfa_19" class="calcval-40,880">2</option>
+<option value="tfa_20" id="tfa_20" class="calcval-51,640">3</option>
+<option value="tfa_21" id="tfa_21" class="calcval-62,400">4</option>
+<option value="tfa_22" id="tfa_22" class="calcval-73,160">5</option>
+<option value="tfa_23" id="tfa_23" class="calcval-83,920">6</option>
+<option value="tfa_24" id="tfa_24" class="calcval-94,680">7</option>
+<option value="tfa_25" id="tfa_25" class="calcval-105,440">8</option>
+<option value="tfa_26" id="tfa_26" class="calcval-116,200">9</option>
+<option value="tfa_27" id="tfa_27" class="calcval-126,960">10</option>
+<option value="tfa_28" id="tfa_28" class="calcval-137,720">11</option></select></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_14-D">
+<label id="tfa_14-L" class="label preField reqMark" for="tfa_14">Annual Household Income?</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_14" name="tfa_14" value="" title="Annual Household Income?" class="validate-integer calc-Income required"></div>
+</div>
+<div class="oneField field-container-D  labelsLeftAligned  " id="tfa_33-D" role="radiogroup" aria-labelledby="tfa_33-L" data-tfa-labelledby="-L tfa_33-L">
+<label id="tfa_33-L" class="label preField reqMark" data-tfa-check-label-for="tfa_33">Currently Insured For Health?</label><div class="inputWrapper"><table id="tfa_33" class="choices columns2 required"><tr>
+<td><span class="oneChoice"><input type="radio" value="tfa_34" class="" id="tfa_34" name="tfa_33" aria-required="true" aria-labelledby="tfa_34-L" data-tfa-labelledby="tfa_33-L tfa_34-L" data-tfa-parent-id="tfa_33"><label class="label postField" id="tfa_34-L" for="tfa_34"><span class="input-radio-faux"></span>Yes</label></span></td>
+<td><span class="oneChoice"><input type="radio" value="tfa_35" class="" id="tfa_35" name="tfa_33" aria-required="true" aria-labelledby="tfa_35-L" data-tfa-labelledby="tfa_33-L tfa_35-L" data-tfa-parent-id="tfa_33"><label class="label postField" id="tfa_35-L" for="tfa_35"><span class="input-radio-faux"></span>No</label></span></td>
+</tr></table></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_16-D">
+<label id="tfa_16-L" class="label preField reqMark" for="tfa_16">Total Medical Debt?</label><br><div class="inputWrapper"><input aria-required="true" type="text" id="tfa_16" name="tfa_16" value="" title="Total Medical Debt?" class="required"></div>
+</div>
+<div class="oneField field-container-D  labelsLeftAligned  " id="tfa_29-D" role="radiogroup" aria-labelledby="tfa_29-L" data-tfa-labelledby="-L tfa_29-L">
+<label id="tfa_29-L" class="label preField reqMark" data-tfa-check-label-for="tfa_29">Received prior help from Clean SlateZ?</label><div class="inputWrapper"><span id="tfa_29" class="choices horizontal required"><span class="oneChoice"><input type="radio" value="tfa_30" class="" id="tfa_30" name="tfa_29" aria-required="true" aria-labelledby="tfa_30-L" data-tfa-labelledby="tfa_29-L tfa_30-L" data-tfa-parent-id="tfa_29"><label class="label postField" id="tfa_30-L" for="tfa_30"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_31" class="" id="tfa_31" name="tfa_29" aria-required="true" aria-labelledby="tfa_31-L" data-tfa-labelledby="tfa_29-L tfa_31-L" data-tfa-parent-id="tfa_29"><label class="label postField" id="tfa_31-L" for="tfa_31"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_32-D">
+<label id="tfa_32-L" class="label preField " for="tfa_32">Referral Code</label><br><div class="inputWrapper"><input type="text" id="tfa_32" name="tfa_32" value="" title="Referral Code" class=""></div>
+</div>
+<div class="oneField field-container-D     wf-acl-hidden" id="tfa_36-D">
+<label id="tfa_36-L" class="label preField " for="tfa_36">Eligibility Submitted Date</label><br><div class="inputWrapper"><input type="text" id="tfa_36" name="tfa_36" value="" title="Eligibility Submitted Date" class="validate-date"></div>
+</div>
+<div class="actions" id="3-A" data-contentid="submit_button"><input type="submit" data-label="Submit" class="primaryAction" id="submit_button" value="Submit"></div>
+<div style="clear:both"></div>
+<input type="hidden" value="3" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="556200e744f4a1403dac52c2e817634f" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="" name="tfa_dbWorkflowSessionUuid" id="tfa_dbWorkflowSessionUuid"><input type="hidden" value="" name="tfa_noOverWriteFields" id="tfa_noOverWriteFields"><input type="hidden" value="72" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">
+</form>
+</div></div><div class="wFormFooter"><p class="supportInfo"><a target="new" class="contactInfoLink" href="https://cleanslatez.tfaforms.net/forms/help/3" data-testid="contact-info-link"></a><br></p></div>
+  <p class="supportInfo" >
+      </p>
+ </div>
+

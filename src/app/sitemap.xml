@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://cleanslatez.org/</loc>
+  <lastmod>2024-01-16T09:02:39+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://cleanslatez.org/about-us</loc>
+  <lastmod>2024-01-16T09:02:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cleanslatez.org/medical-donations</loc>
+  <lastmod>2024-01-16T09:02:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cleanslatez.org/aid-application/short-term</loc>
+  <lastmod>2024-01-16T09:02:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cleanslatez.org/medical-debt-relief-programs</loc>
+  <lastmod>2024-01-16T09:02:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cleanslatez.org/volunteer</loc>
+  <lastmod>2024-01-16T09:02:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cleanslatez.org/faqs</loc>
+  <lastmod>2024-01-16T09:02:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cleanslatez.org/donate-now</loc>
+  <lastmod>2024-01-16T09:02:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
